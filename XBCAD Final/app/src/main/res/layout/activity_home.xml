@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHome">
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar_thumb"
+    android:scrollbarTrackVertical="@drawable/custom_scrollbar_track">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:dividerPadding="16dp">
+
+        <!-- Bubble Balloons Image Button -->
+        <ImageButton
+            android:id="@+id/bubbleBalloonsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bubbleballoons"
+            android:contentDescription="@string/bubble_balloons"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Foil Balloons Image Button -->
+        <ImageButton
+            android:id="@+id/foilBalloonsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/foilbaloons"
+            android:contentDescription="@string/foil_balloons"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Latex Balloons Image Button -->
+        <ImageButton
+            android:id="@+id/latexBalloonsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/latexballoons"
+            android:contentDescription="@string/latex_balloons"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Special Requests Image Button -->
+        <ImageButton
+            android:id="@+id/specialRequestsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/specialrequests"
+            android:contentDescription="@string/special_requests"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:menu="@menu/bottom_navigation_menu"
+    app:itemIconTint="#006400"
+    app:itemTextColor="#006400"
+    android:background="?android:attr/windowBackground"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+

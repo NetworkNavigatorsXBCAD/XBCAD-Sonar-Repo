@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Confirmation Icon -->
+    <ImageView
+        android:id="@+id/confirmationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_confirmation"
+        android:layout_gravity="center"/>
+
+    <!-- Confirmation Message -->
+    <TextView
+        android:id="@+id/orderConfirmationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Confirmed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"/>
+
+    <!-- Order Details -->
+    <TextView
+        android:id="@+id/receiptMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can view the order details in the order screen."
+        android:paddingTop="16dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/orderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Number: 00000"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/pickupTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimated Pickup Time: 00:00 @ Location"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"/>
+
+    <!-- Total Amount -->
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: R0.00"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+</LinearLayout>

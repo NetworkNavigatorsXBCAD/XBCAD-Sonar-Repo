@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/background_gradient">
+
+    <!-- Back Button -->
+
+    <!-- Customer Title -->
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/backb"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/customerTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a customer account"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Customer Email Input -->
+    <EditText
+        android:id="@+id/customerEmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_input"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Input Layout (with eye icon) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/customerPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"/>
+
+        <ImageButton
+            android:id="@+id/passwordToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Toggle Password Visibility"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eyeicon" />
+    </RelativeLayout>
+
+    <!-- Confirm Password Input Layout (with eye icon) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <EditText
+            android:id="@+id/customerConfirmPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"/>
+
+        <ImageButton
+            android:id="@+id/confirmPasswordToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Toggle Confirm Password Visibility"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eyeicon" />
+    </RelativeLayout>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/customerRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#007bff"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Already Have an Account -->
+    <TextView
+        android:id="@+id/customerAlreadyHaveAccountText"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:text="Already have an account"
+        android:textColor="#FF000000" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/customerLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#007bff"
+        android:backgroundTint="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

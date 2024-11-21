@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_currentOrders"
+        android:icon="@drawable/current_orders"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/nav_stock"
+        android:icon="@drawable/stock"
+        android:title="Stock" />
+
+    <item
+        android:id="@+id/nav_LogOut"
+        android:icon="@drawable/logouticon"
+        android:title="Log Out" />
+
+</menu>

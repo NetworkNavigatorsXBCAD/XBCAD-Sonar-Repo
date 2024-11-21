@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Order Number -->
+        <TextView
+            android:id="@+id/orderNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Number"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Pickup Location -->
+        <TextView
+            android:id="@+id/pickupLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup Location"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Pickup Time -->
+        <TextView
+            android:id="@+id/pickupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup Time"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

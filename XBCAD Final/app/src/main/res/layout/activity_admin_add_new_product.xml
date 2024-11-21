@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".StockCategories.AddNewProductActivity">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back Button"
+        android:src="@drawable/ic_backarrow" /> <!-- Replace with your back arrow icon -->
+
+    <!-- Product Name Input -->
+    <EditText
+        android:id="@+id/editProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:textColorHint="#808080" />
+
+    <!-- Price Input -->
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:layout_below="@id/editProductName"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:textColorHint="#808080" />
+
+    <!-- Category Dropdown (Spinner) -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrice"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/blue" />
+
+
+    <!-- Select Image Button -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_below="@id/spinnerCategory"
+        android:layout_marginTop="16dp" />
+
+    <!-- Image Preview (Selected Product Image) -->
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/selectImageButton"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Selected Product Image"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Product"
+        android:layout_below="@id/selectedImageView"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

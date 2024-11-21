@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <!-- Back arrow button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_backarrow"
+        android:contentDescription="Back"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/requestTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REQUESTS"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_toEndOf="@id/backButton"
+        android:layout_alignTop="@id/backButton"
+        android:layout_marginStart="16dp" />
+
+    <!-- Order Number EditText -->
+    <EditText
+        android:id="@+id/etOrderNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/requestTitle"
+        android:layout_marginTop="32dp"
+        android:hint="Enter Order Number"
+        android:padding="12dp"
+        android:textColorHint="#808080"
+        android:textColor="@android:color/black" />
+
+    <!-- Date EditText -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOrderNumber"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Date"
+        android:padding="12dp"
+        android:textColorHint="#808080"
+        android:textColor="@android:color/black" />
+
+    <!-- Description EditText -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDate"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Description"
+        android:padding="12dp"
+        android:textColorHint="#808080"
+        android:textColor="@android:color/black"
+        android:gravity="start|top"
+        android:minHeight="100dp"
+        android:maxHeight="200dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etDescription"
+        android:layout_marginTop="32dp"
+        android:text="SAVE"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

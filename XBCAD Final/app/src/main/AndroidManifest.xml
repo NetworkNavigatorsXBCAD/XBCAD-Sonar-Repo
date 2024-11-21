@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions required for image selection and uploading -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- Optional: For Android 10 (API 29) and above if your app needs to manage external storage -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pandplogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PartyAndPetals">
+
+        <!-- Activities defined in your app -->
+        <activity android:name=".CustomerActivity"></activity>
+        <activity android:name=".AdminActivity"></activity>
+        <activity android:name=".AdminRegistrationActivity" />
+        <activity android:name=".CustomerRegistrationActivity" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".CustomerLoginActivity" />
+
+        <!-- Main Home Screen -->
+        <activity android:name=".ActivityHome" />
+
+        <!-- Balloons and Special Requests Activities -->
+        <activity android:name=".BubbleBalloonsActivity" />
+        <activity android:name=".FoilBalloonsActivity" />
+        <activity android:name=".LatexBalloonsActivity" />
+        <activity android:name=".SpecialRequestsActivity" />
+
+        <!-- Navigation Bar Activities -->
+        <activity android:name=".CartActivity" />
+        <activity android:name=".CompletedOrdersActivity" />
+        <activity android:name=".StockActivity" />
+        <activity android:name=".OrdersActivity" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".LogoutActivity" />
+
+        <!-- Stock Activities -->
+        <activity android:name=".StockCategories.AdminBubbleBalloonsActivity" />
+        <activity android:name=".StockCategories.AdminLatexBalloonsActivity" />
+        <activity android:name=".StockCategories.AdminFoilBalloonsActivity" />
+        <activity android:name=".StockCategories.AdminCreateRequestActivity" />
+        <activity android:name=".StockCategories.AddNewProductActivity" />
+
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".EmailActivity" />
+        <activity android:name=".PhoneActivity" />
+        <activity android:name=".WhatsAppActivity" />
+        <activity android:name=".PayAtStoreActivity" />
+        <activity android:name=".CashPaymentConfirmation" />
+        <activity android:name=".RecieptEmailActivity" />
+        <activity android:name=".PickupLocationActivity" />
+
+
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

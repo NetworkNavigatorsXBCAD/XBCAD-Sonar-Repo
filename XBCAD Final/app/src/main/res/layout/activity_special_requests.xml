@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Container -->
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Page heading -->
+        <TextView
+            android:id="@+id/requestHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPECIAL REQUEST"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Page description -->
+    <TextView
+        android:id="@+id/requestDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select a contact method and a representative of Party and Petals will contact you regarding your request"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <!-- Contact Method Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/requestDescription">
+
+        <ImageButton
+            android:id="@+id/whatsappButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whatsapp"
+            android:contentDescription="WhatsApp" />
+
+        <ImageButton
+            android:id="@+id/instagramButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/instagram"
+            android:contentDescription="Instagram" />
+
+        <ImageButton
+            android:id="@+id/facebookButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook"
+            android:contentDescription="Facebook" />
+
+        <ImageButton
+            android:id="@+id/emailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/email"
+            android:contentDescription="Email" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

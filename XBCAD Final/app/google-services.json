@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "267862253815",
+    "firebase_url": "https://party-supplies-app-default-rtdb.firebaseio.com",
+    "project_id": "party-supplies-app",
+    "storage_bucket": "party-supplies-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267862253815:android:f8bb6eab4a356ef27073f2",
+        "android_client_info": {
+          "package_name": "com.xbcad.partyandpetals"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC08X8EDEURyl4LPy1Xn4XXZ8ypIxQ0zCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
